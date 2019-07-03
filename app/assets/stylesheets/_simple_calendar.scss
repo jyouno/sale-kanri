@@ -49,8 +49,9 @@
     }
 
     .table-striped {
-        height: 100%;
+        height: calc(100% - 100px);
         width: 100%;
+        table-layout: fixed;
     }
     th {
         text-align: center;
