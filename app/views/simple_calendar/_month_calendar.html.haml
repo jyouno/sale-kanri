@@ -1,6 +1,8 @@
 .simple-calendar
   .calendar-heading
     .calendar-heading__left
+      = link_to 'weekly' do
+        .box Weekly
     .calendar-heading__center
       = link_to calendar.url_for_previous_view do
         %i.fa.fa-angle-double-left
@@ -9,7 +11,7 @@
         = start_date.year
       = link_to calendar.url_for_next_view do
         %i.fa.fa-angle-double-right
-    .calendar-heading__right
+    .calendar-heading__right user
   %table.table.table-striped
     %thead
       %tr

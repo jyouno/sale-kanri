@@ -8,6 +8,17 @@
         justify-content: space-between;
         height: 100px;
         background-color: $blue;
+        &__left {
+            margin:auto 10px;
+            a {
+                text-decoration: none;
+            }
+            .box {
+                color: black;
+                background-color: white;
+                padding: 10px;
+            }
+        }
         &__center{
             padding:10px;
             a {
