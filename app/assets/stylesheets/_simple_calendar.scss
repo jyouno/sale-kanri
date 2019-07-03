@@ -56,8 +56,12 @@
         text-align: center;
         border: 1px solid black;
     }
+    td {
+        vertical-align: top;
+    }
 
-    .day {text-align: center;
+    .day {
+        text-align: center;
         border: 1px solid black;
     }
     .wday-0 {}
