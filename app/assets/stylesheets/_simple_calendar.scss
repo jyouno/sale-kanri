@@ -1,11 +1,16 @@
 @import './variable';
 
 .simple-calendar {
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     .calendar-heading {
+        display: flex;
+        justify-content: space-between;
         height: 100px;
         background-color: $blue;
+        .calendar-title {
+            font-size: 50px;
+        }
     }
     .day {padding: 20px}
     .wday-0 {}
