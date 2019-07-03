@@ -30,6 +30,22 @@
                 font-size: 50px;
             }
         }
+        &__right {
+            margin:auto 10px;
+            display: flex;
+            .user {
+                padding: 10px;
+                font-size: 20px;
+            }
+            a {
+                text-decoration: none; 
+            }
+            .box {
+                color: black;
+                background-color: white;
+                padding: 10px;
+            }
+        }
     }
     .day {padding: 20px}
     .wday-0 {}
