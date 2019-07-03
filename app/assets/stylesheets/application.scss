@@ -1,2 +1,7 @@
 @import "./reset";
-@import "./simple_calendar"
+@import "./simple_calendar";
+@import "./variable";
+
+.wrapper {
+  position: fixed;
+}

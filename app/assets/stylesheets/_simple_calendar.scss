@@ -1,6 +1,11 @@
+@import './variable';
+
 .simple-calendar {
+    height: 100%;
+    width: 100%;
     .calendar-heading {
-        
+        height: 100px;
+        background-color: $blue;
     }
     .day {padding: 20px}
     .wday-0 {}
