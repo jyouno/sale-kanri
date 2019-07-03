@@ -8,8 +8,16 @@
         justify-content: space-between;
         height: 100px;
         background-color: $blue;
-        .calendar-title {
-            font-size: 50px;
+        &__center{
+            padding:10px;
+            a {
+                color: black;
+                font-size: 30px;
+                text-decoration: none;
+            }
+            .calendar-title {
+                font-size: 50px;
+            }
         }
     }
     .day {padding: 20px}
