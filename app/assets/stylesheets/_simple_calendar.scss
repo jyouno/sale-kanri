@@ -47,7 +47,19 @@
             }
         }
     }
-    .day {padding: 20px}
+
+    .table-striped {
+        height: 100%;
+        width: 100%;
+    }
+    th {
+        text-align: center;
+        border: 1px solid black;
+    }
+
+    .day {text-align: center;
+        border: 1px solid black;
+    }
     .wday-0 {}
     .wday-1 {}
     .wday-2 {}
