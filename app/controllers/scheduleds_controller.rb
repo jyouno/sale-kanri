@@ -1,6 +1,7 @@
 class ScheduledsController < ApplicationController
 
   def index
+    @meetings = Meeting.all
   end
 
   def show
