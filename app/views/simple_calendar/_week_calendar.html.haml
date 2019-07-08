@@ -3,6 +3,8 @@
     .calendar-heading__left
       = link_to '/' do
         .box monthly
+      = link_to 'meetings/new' do
+        .box スケジュール追加
     .calendar-heading__center
       = link_to  calendar.url_for_previous_view do
         %i.fa.fa-angle-double-left
@@ -15,8 +17,9 @@
       = link_to calendar.url_for_next_view do
         %i.fa.fa-angle-double-right
     .calendar-heading__right
-      .user user
-      = link_to 'logout' do
+      .user
+        = current_user.name
+      = link_to destroy_user_session_path, method: :delete do
         .box ログアウト
   %table.table.table-striped
     %thead
