@@ -14,9 +14,11 @@
                 text-decoration: none;
             }
             .box {
+                float: left;
                 color: black;
                 background-color: white;
                 padding: 10px;
+                margin-right: 5px;
             }
         }
         &__center{

@@ -7,13 +7,13 @@
           %li= message
 
   .field
-    = f.label :name
+    = f.label :スケジュール名
     = f.text_field :name
   .field
-    = f.label :start_time
+    = f.label :開始
     = f.datetime_select :start_time
   .field
-    = f.label :end_time
+    = f.label :終了
     = f.datetime_select :end_time
   .actions
-    = f.submit 'Save'
+    = f.submit '保存'
