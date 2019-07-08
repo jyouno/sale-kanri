@@ -16,7 +16,7 @@
     .calendar-heading__right
       .user 
         = current_user.name
-      = link_to 'logout' do
+      = link_to destroy_user_session_path, method: :delete do
         .box ログアウト
   %table.table.table-striped
     %thead
