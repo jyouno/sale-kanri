@@ -1,10 +1,16 @@
 class ScheduledsController < ApplicationController
-
+  before_action :set_meeting
+  
   def index
-    @meetings = Meeting.all
   end
 
   def show
+  end
+
+  private
+
+  def set_meeting
+    @meetings = Meeting.all
   end
 
 end
