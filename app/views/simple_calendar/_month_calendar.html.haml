@@ -14,7 +14,8 @@
       = link_to calendar.url_for_next_view do
         %i.fa.fa-angle-double-right
     .calendar-heading__right
-      .user user
+      .user 
+        = current_user.name
       = link_to 'logout' do
         .box ログアウト
   %table.table.table-striped
