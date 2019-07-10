@@ -1,6 +1,6 @@
 class ScheduledsController < ApplicationController
   before_action :set_meeting
-  
+
   def index
   end
 
@@ -10,7 +10,7 @@ class ScheduledsController < ApplicationController
   private
 
   def set_meeting
-    @meetings = Meeting.all
+    @meetings = current_user.meetings
   end
 
 end
