@@ -1,0 +1,89 @@
+@import './variable';
+
+.simple-calendar {
+    height: 100vh;
+    width: 100vw;
+    .calendar-heading {
+        display: flex;
+        justify-content: space-between;
+        height: 100px;
+        background-color: $blue;
+        &__left {
+            margin:auto 10px;
+            a {
+                text-decoration: none;
+            }
+            .box {
+                float: left;
+                color: black;
+                background-color: white;
+                padding: 10px;
+                margin-right: 5px;
+            }
+        }
+        &__center{
+            padding:10px;
+            a {
+                color: black;
+                font-size: 30px;
+                text-decoration: none;
+            }
+            .calendar-title {
+                font-size: 50px;
+            }
+        }
+        &__right {
+            margin:auto 10px;
+            display: flex;
+            .user {
+                padding: 10px;
+                font-size: 20px;
+            }
+            a {
+                text-decoration: none; 
+            }
+            .box {
+                color: black;
+                background-color: white;
+                padding: 10px;
+            }
+        }
+    }
+
+    .table-striped {
+        height: calc(100% - 100px);
+        width: 100%;
+        table-layout: fixed;
+    }
+    th {
+        text-align: center;
+        border: 1px solid black;
+    }
+    td {
+        vertical-align: top;
+    }
+
+    .day {
+        text-align: center;
+        border: 1px solid black;
+    }
+    .wday-0 {}
+    .wday-1 {}
+    .wday-2 {}
+    .wday-3 {}
+    .wday-4 {}
+    .wday-5 {}
+    .wday-6 {}
+
+    .today {}
+    .past {}
+    .future {}
+
+    .start-date {}
+
+    .prev-month {}
+    .next-month { }
+    .current-month {}
+
+    .has-events {}
+}

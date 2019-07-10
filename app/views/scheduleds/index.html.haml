@@ -1,0 +1,6 @@
+.wrapper
+  = month_calendar events: @meetings do |date, meetings|
+    = date.to_formatted_s(:short)
+    - meetings.each do |meeting|
+      .meeting
+        = meeting.name
