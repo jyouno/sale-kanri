@@ -1,4 +1,18 @@
 $(function(){
+var datas = $('.data').val();
+var data = JSON.parse(datas);
+
+function countDownTimer(data, counter) {
+  var html = `<div class="counter-title">${data.title}まで
+                <p class="timer"> あと </p>
+                <span id="day">${counter[0]}日</span>
+                <span id="hour">${counter[1]}時間</span> 
+                <span id="min">${counter[2]}分</span> 
+                <span id="sec">${counter[3]}秒</span> 
+              </div>`
+  return html
+}
+
 var countdown = function(due) {
   var now = new Date();
 
@@ -12,26 +26,28 @@ var countdown = function(due) {
   return count;
 }
 
-var goal = new Date(2020, 6, 24);
-/*goal.setDate(20);
-goal.setHours(23);
-goal.setMinutes(59);
-goal.setSeconds(59);*/
-
-
-var recalc = function() {
+var recalc = function(){
+  $('.calender-left').empty();
+  data.forEach(function(day){
+  var goal = new Date(day.day);
   var counter = countdown(goal);
-  //var time = counter[0] + '日' + counter[1] + '時間' + counter[2] + '分' + counter[3] + '秒';
-  //document.getElementById('timer').textContent = time;
+  var html = countDownTimer(day, counter);
+  $('.calender-left').append(html);
+})
+reload();
+}
+
+/*var recalc = function() {
+  var counter = countdown(goal);
   document.getElementById('day').textContent = counter[0];
   document.getElementById('hour').textContent = counter[1];
   document.getElementById('min').textContent = counter[2];
   document.getElementById('sec').textContent = counter[3];
   refresh();
-}
+}*/
 
-var refresh = function() {
-  setTimeout(recalc, 1000);
+var reload = function() {
+  setInterval(recalc, 1000);
 }
 
 recalc();

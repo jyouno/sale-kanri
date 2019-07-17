@@ -1,6 +1,7 @@
 .simple-calendar
   .calender-left
-    %h2 東京オリンピックまで
+    %input.data{type: 'hidden', name: 'data', value: @counters_json}
+    .counter-title
     %p.timer あと 
     %span#day
     日
