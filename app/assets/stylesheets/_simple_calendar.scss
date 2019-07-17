@@ -7,6 +7,9 @@
         float: left;
         height: 100%;
         width: 120px;
+        .counter-title {
+            border: 1px solid black;
+        }
     }
     .calendar-heading {
         display: flex;

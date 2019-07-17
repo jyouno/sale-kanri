@@ -7,6 +7,7 @@ class ScheduledsController < ApplicationController
   end
 
   def show
+    @counters_json = @counters.to_json.html_safe
   end
 
   private

@@ -6,7 +6,7 @@ function countDownTimer(data, counter) {
   var html = `<div class="counter-title">${data.title}まで
                 <p class="timer"> あと </p>
                 <span id="day">${counter[0]}日</span>
-                <span id="hour">${counter[1]}時間</span> 
+                <span id="hour">${counter[1]}時間</span><br> 
                 <span id="min">${counter[2]}分</span> 
                 <span id="sec">${counter[3]}秒</span> 
               </div>`

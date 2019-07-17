@@ -1,16 +1,6 @@
 .simple-calendar
   .calender-left
     %input.data{type: 'hidden', name: 'data', value: @counters_json}
-    .counter-title
-    %p.timer あと 
-    %span#day
-    日
-    %span#hour 
-    時間
-    %span#min 
-    分
-    %span#sec 
-    秒
   .calendar-heading
     .calendar-heading__left
       = link_to 'scheduled' do
