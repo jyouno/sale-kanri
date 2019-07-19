@@ -1,6 +1,6 @@
 class MeetingsController < ApplicationController
   before_action :set_meeting, only: [:show, :edit, :update, :destroy]
-
+  
   # GET /meetings
   # GET /meetings.json
   def index
@@ -70,5 +70,9 @@ class MeetingsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def meeting_params
       params.require(:meeting).permit(:name, :start_time, :end_time)
+    end
+
+    def set_counter
+      @counters = Counter.all
     end
 end

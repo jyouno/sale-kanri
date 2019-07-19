@@ -3,6 +3,14 @@
 .simple-calendar {
     height: 100vh;
     width: 100vw;
+    .calender-left {
+        float: left;
+        height: 100%;
+        width: 120px;
+        .counter-title {
+            border: 1px solid black;
+        }
+    }
     .calendar-heading {
         display: flex;
         justify-content: space-between;
@@ -22,14 +30,14 @@
             }
         }
         &__center{
-            padding:10px;
+            padding-top:20px;
             a {
                 color: black;
                 font-size: 30px;
                 text-decoration: none;
             }
             .calendar-title {
-                font-size: 50px;
+                font-size: 40px;
             }
         }
         &__right {
@@ -52,7 +60,7 @@
 
     .table-striped {
         height: calc(100% - 100px);
-        width: 100%;
+        width: calc(100% - 120px);
         table-layout: fixed;
     }
     th {
@@ -67,6 +75,11 @@
         text-align: center;
         border: 1px solid black;
     }
+
+    .meeting {
+        background-color: $blue;
+        margin-bottom: 1px;
+    }
     .wday-0 {}
     .wday-1 {}
     .wday-2 {}
@@ -75,7 +88,9 @@
     .wday-5 {}
     .wday-6 {}
 
-    .today {}
+    .today {
+        background-color: #FFFFCC;
+    }
     .past {}
     .future {}
 

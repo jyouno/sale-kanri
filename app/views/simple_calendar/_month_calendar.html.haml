@@ -1,4 +1,6 @@
 .simple-calendar
+  .calender-left
+    %input.data{type: 'hidden', name: 'data', value: @counters_json}
   .calendar-heading
     .calendar-heading__left
       = link_to 'scheduled' do
