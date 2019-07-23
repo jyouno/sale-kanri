@@ -10,6 +10,9 @@ class ScheduledsController < ApplicationController
     @counters_json = @counters.to_json.html_safe
   end
 
+  def edit
+  
+  end
   private
 
   def set_meeting
