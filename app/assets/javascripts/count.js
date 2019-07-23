@@ -37,15 +37,6 @@ var recalc = function(){
 reload();
 }
 
-/*var recalc = function() {
-  var counter = countdown(goal);
-  document.getElementById('day').textContent = counter[0];
-  document.getElementById('hour').textContent = counter[1];
-  document.getElementById('min').textContent = counter[2];
-  document.getElementById('sec').textContent = counter[3];
-  refresh();
-}*/
-
 var reload = function() {
   setInterval(recalc, 1000);
 }
